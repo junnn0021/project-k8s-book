@@ -1,7 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'asia-northeast3-docker.pkg.dev/project-k8s-book/docker-artifact-registry/web-apache:$COMMIT_SHA', '.' ]
-build:
   service_account: '961629056310-compute@developer.gserviceaccount.com'
   logging:
     logging_service: NONE
