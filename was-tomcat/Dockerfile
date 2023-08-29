@@ -14,7 +14,7 @@ EXPOSE 8080
 WORKDIR /petclinic_btc
 
 RUN git clone https://github.com/youngho1234/petclinic_btc.git .
-COPY ./pom.xml ./
+# COPY ./pom.xml ./
 
 RUN chmod +x ./mvnw
 RUN ./mvnw clean package
