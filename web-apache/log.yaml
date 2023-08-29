@@ -1,0 +1,11 @@
+steps:
+- name: 'gcloud'
+  args:
+  - 'run'
+  - 'echo'
+  - 'Hello, world!'
+
+build:
+  service_account: '961629056310-compute@developer.gserviceaccount.com'
+  logging:
+    logging_service: NONE
